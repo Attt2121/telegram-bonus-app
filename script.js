@@ -7,7 +7,7 @@ async function loadUserData() {
     const userId = tg.initDataUnsafe.user?.id;
     
     try {
-        const response = await fetch('https://lavish-pattern-aristosuchus.glitch.me/get_user', {
+        const response = await fetch('https://maze-fierce-energy.glitch.me/get_user', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ user_id: userId })
@@ -26,7 +26,7 @@ async function addPoints(points) {
     const userId = tg.initDataUnsafe.user?.id;
     
     try {
-        const response = await fetch('https://lavish-pattern-aristosuchus.glitch.me/add_points', {
+        const response = await fetch('https://maze-fierce-energy.glitch.me/add_points', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ 
