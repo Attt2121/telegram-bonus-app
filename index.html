@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя бонусная программа</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+            background-color: #f0f2f5;
+        }
+        .profile-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 300px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .points {
+            font-size: 28px;
+            color: #FF9500;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        button {
+            background: #0088cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <h2>Мои бонусы</h2>
+        <p>Привет, <span id="user-name">Гость</span>!</p>
+        <div class="points">
+            <span id="user-points">0</span> баллов
+        </div>
+        <button onclick="addPoints(1)">+1 балл</button>
+        <button onclick="addPoints(5)">+5 баллов</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
